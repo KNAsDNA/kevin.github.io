@@ -1,0 +1,203 @@
+  #content {
+          transition: all 1s;
+          animation: ease-in;
+           
+          margin: 150px auto;
+          width: 80%;
+          height: 800px;
+
+         
+        }
+.btn{
+  min-width: 100px;
+  min-height: 30px;
+  border:0;
+  outline: 0;
+  padding:10px;
+  margin:10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.9;
+  color:#fff;
+}
+.btn:hover{
+    text-decoration: none;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+
+/*Blue Button*/
+.outline-blue{
+  background-color: #fff;
+  color:#2962FF;
+  border:1px solid #2962FF;
+}
+.outline-blue:hover{
+    text-decoration: none;
+  background-color: #2962FF;
+  color:#fff;
+  border:1px solid #2962FF;
+}
+
+/*Green Button*/
+.outline-green{
+  background-color: #fff;
+  color: #388E3C;
+  border:1px solid #388E3C;
+}
+.outline-green:hover{
+    text-decoration: none;
+  background-color: #388E3C;
+  color: #fff;
+  border:1px solid #388E3C;
+}
+
+/*Red Button*/
+.outline-red{
+  background-color: #fff;
+  color: #D32F2F;
+  border:1px solid #D32F2F;
+}
+.outline-red:hover{
+    text-decoration: none;
+  background-color: #D32F2F;
+  color: #fff;
+  border:1px solid #D32F2F;
+}
+
+/*Grey Button*/
+.outline-grey{
+  background-color: #fff;
+  color: #546E7A;
+  border:1px solid #546E7A;
+}
+.outline-grey:hover{
+    text-decoration: none;
+  background-color: #546E7A;
+  color: #fff;
+  border:1px solid #546E7A;
+}
+
+/*Black Button*/
+.outline-black{
+ background-color: #fff;
+ color: #242526;
+ border:1px solid #343536;
+}
+.outline-black:hover{
+    text-decoration: none;
+ background-color: #242526;
+ color: #fff;
+ border:1px solid #343536;
+}
+
+
+a{text-decoration: none;}
+                .container1{
+                    margin-top: 100px;
+            
+            
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+        .image {
+            height: 200px;
+            width: 200px;
+            border-radius: 25px;
+
+        }
+        .judul {
+            color: white;
+            text-shadow: 2px 2px 2px orange;
+            font-size: 50px;
+            text-decoration-skip;
+            text-decoration: underline;
+        }
+        table {
+            
+            width: 60%;
+        }
+        p {
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 2px salmon;
+        }
+              body{
+        background: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .navbar{
+    position: fixed;
+    transition: 1s;
+  }
+    .navbar-brand{
+        color: #fff;
+        font-size: 45px;
+        font-family: Germania;
+        cursor: pointer;
+      }
+      .icon-bar{
+    background-color: #000;
+
+  }
+      .nav{
+        font-family: Lithos Pro;
+        color: #fff;
+        padding: 10px 20px;
+      }
+
+      .nav li{
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .nav li:after{
+        content: '';
+        display: block;
+          border-bottom: 2px solid #38fd07;
+          transform: scaleX(0);
+          transition: .2s ease-in-out;
+      }
+      .nav li:hover:after{
+         transform: scaleX(1);
+      }
+      .para{
+        min-height: 500px;
+      }
+      .para h3{
+        text-align: center;
+        margin-top: 15%;
+        color: #fff;
+        font-family: nyala;
+        font-size: 44px;
+      }
+      body::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+  }
+  body::-webkit-scrollbar
+  {
+    width: 14px;
+  }
+
+  body::-webkit-scrollbar-thumb
+  {
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    background:  #501e27;
+  }
+  @media(max-width: 720px){
+    body{
+      background-size: 100% 100%;
+    }
+    .navbar-collapse{
+    background: #501e27;
+  }
+    .para{
+      min-height: 800px;
+    }
+  }
