@@ -419,7 +419,7 @@ function gallery() {
 <center><h1  data-aos="fade-down"><span class="gal">Gal</span><span>Vin</span></h1></center>
   <div data-aos="fade-up" class="gird-container">
 
-    <div class="gird-item tall" style="background-image: url('IMG/k1.jpg');">
+    <div class="gird-item tall" style="background-image: url('img/k1.jpg');">
             <div class="ejercico">
              
                 KNA 1
@@ -438,7 +438,7 @@ function gallery() {
      </div>
 
 
-       <div class="gird-item" style="background-image: url('IMG/k2.jpg');">
+       <div class="gird-item" style="background-image: url('img/k2.jpg');">
         <div class="ejercico">
               
                 KNA 3
@@ -450,7 +450,7 @@ function gallery() {
        </div>
 
 
-        <div class="gird-item" style="background-image: url('IMG/k3.jpg');">
+        <div class="gird-item" style="background-image: url('img/k3.jpg');">
 
           <div class="ejercico">
               
@@ -462,7 +462,7 @@ function gallery() {
         </div>
 
 
-         <div class="gird-item wide" style="background-image: url('IMG/k4.jpg');">
+         <div class="gird-item wide" style="background-image: url('img/k4.jpg');">
 
           <div class="ejercico">
               
@@ -473,7 +473,7 @@ function gallery() {
          </div>
 
 
-          <div class="gird-item tall" style="background-image: url('IMG/k5.jpg');">
+          <div class="gird-item tall" style="background-image: url('img/k5.jpg');">
 
             <div class="ejercico">
               
