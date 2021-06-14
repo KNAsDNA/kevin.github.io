@@ -1,302 +1,102 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkenalan HTML & CSS</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>KNA'SWeb</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
 <body>
-    <style>
-        body {
-           background: linear-gradient(#36D1DC,#5B86E5); 
-           
-           background-repeat: no-repeat;
-  background-attachment: fixed;
-        }
-        *{
-            font-family: 'New Tegomin', serif;
-        }
-        .container1{
-            position: relative;
-            
-            
-            width: 500px;
-            border: 2px solid black;
-            border-radius: 25px;
-        }
-        .image {
-            height: 200px;
-            width: 200px;
-            border-radius: 25px;
 
-        }
-        .judul {
-            color: white;
-            text-shadow: 2px 2px 2px orange;
-            font-size: 50px;
-            text-decoration-skip;
-            text-decoration: underline;
-        }
-        table {
-            
-            width: 60%;
-        }
-        p {
-            font-size: 20px;
-            color: white;
-            text-shadow: 2px 2px 2px salmon;
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark ">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg" style=" background: rgba(0,0,0,0.2);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="btn btn-primary navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  Kevin
+</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <a class="nav-link  active" onclick="Home();" style="color: orange;" href="#"> Home</a>
+         
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" onclick="myFunction();"  href="#" aria-current="page" style="color: orange;">Profile</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <li class="nav-item">
+           <a class="nav-link  active" onclick="contact();" style="color: orange;" href="#"> Contact</a>
+         
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+         <li class="nav-item">
+           <a class="nav-link  active" onclick="gallery();" style="color: orange;" href="#"> Gallery</a>
+         
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+     
     </div>
   </div>
 </nav>
-    <div style="display: flex;height: 100%">
-        <center>
-    <div class="container1">
-    
-        <h1 class="judul">Biodata</h1>
-        
-        <img class="image" src="Kevin.jpg" alt="">
-    <br>
-        <table>
-            <tr>
-                <td><p>Nama</p></td>
-                <td><p>: Kevin Nabiel Albany</p></td>
-            </tr>
-            <tr>
-                <td><p>Kelas</p></td>
-                <td><p>: XI - 1</p></td>
-            </tr>
-            <tr>
-                <td><p>Umur</p></td>
-                <td><p>: 16</p></td>
-            </tr>
-            <tr>
-                <td><p>Hobi</p></td>
-                <td><p>: Berimajinasi</p></td>
-            </tr>
-        </table>
-
-    </div>
-
-</center>
-<div style="flex: 1;">
-    <center>
-    <h1>Pengalaman saya selama corona !</h1><p>ftdtsyhtthfutduydutddtuotyfufgyudFFdjhgfzdhgjkhxccvjhkjhf</p>
-    </center>
 </div>
-</div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-s
-</body>
-</html> -->
-
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-    <style type="text/css">
-                .container1{
-                    margin-top: 100px;
-            
-            
-            width: 500px;
-            border: 2px solid black;
-            border-radius: 25px;
-        }
-        .image {
-            height: 200px;
-            width: 200px;
-            border-radius: 25px;
-
-        }
-        .judul {
-            color: white;
-            text-shadow: 2px 2px 2px orange;
-            font-size: 50px;
-            text-decoration-skip;
-            text-decoration: underline;
-        }
-        table {
-            
-            width: 60%;
-        }
-        p {
-            font-size: 20px;
-            color: white;
-            text-shadow: 2px 2px 2px salmon;
-        }
-              body{
-        background: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      .navbar{
-    position: fixed;
-    transition: 1s;
-  }
-    .navbar-brand{
-        color: #fff;
-        font-size: 45px;
-        font-family: Germania;
-        cursor: pointer;
-      }
-      .icon-bar{
-    background-color: #000;
-
-  }
-      .nav{
-        font-family: Lithos Pro;
-        color: #fff;
-        padding: 10px 20px;
-      }
-
-      .nav li{
-        padding: 10px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-      .nav li:after{
-        content: '';
-        display: block;
-          border-bottom: 2px solid #38fd07;
-          transform: scaleX(0);
-          transition: .2s ease-in-out;
-      }
-      .nav li:hover:after{
-         transform: scaleX(1);
-      }
-      .para{
-        min-height: 500px;
-      }
-      .para h3{
-        text-align: center;
-        margin-top: 15%;
-        color: #fff;
-        font-family: nyala;
-        font-size: 44px;
-      }
-      body::-webkit-scrollbar-track
-  {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-
-  }
-  body::-webkit-scrollbar
-  {
-    width: 14px;
-  }
-
-  body::-webkit-scrollbar-thumb
-  {
-
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
-    background:  #501e27;
-  }
-  @media(max-width: 720px){
-    body{
-      background-size: 100% 100%;
-    }
-    .navbar-collapse{
-    background: #501e27;
-  }
-    .para{
-      min-height: 800px;
-    }
-  }
-    </style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<div class="navbar navbar-fixed-top container-fluid" id="navbar">
-     <div class="navbar-header">
-      <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+<div id="content">
+<div data-aos="zoom-in">
+ <center><h1 style="font-weight: bold;">Pengalaman pembelajaran pada pandemi covid 19</h1></center>
+ <br>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        One
       </button>
-      <a class="navbar-brand">Brand</a>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><p>Penyakit corona virus 2019 atau  Corona Virus Disease-19 (COVID-19) adalah infeksi saluran pernapasan yang disebabkan oleh jenis virus corona, Kasus COVID-19 pertama kali dilaporkan di Kota Wuhan, Provinsi Hubei, Tiongkok, pada Desember 2019.</p>
+</div>
     </div>
-    <div class="collapse navbar-right navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-            <li>Home</li>
-            <li><button href=""  onclick="myFunction()"> about</button></li>
-            <li>Contact</li>
-            <li>Login</li>
-            <li>Signup</li>
-        </ul>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Two
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><p>dalam website saya kali ini saya akan membahas pengalaman saya mengenai pembelajaran saat sedang pandemi covid-19 , Saya tidak memiliki pengalaman yg menarik pada saat pandemi,Kalaupun ada tetapi saya tidak menganggap bahwa hal itu bisa dianggap menarik,Salah satu hal tersebut adalah ketika saya bertanya materi yang tidak saya mengerti kepada adik kelasku yang tercintah Hal tersebut layaknya simbiosis mutualisme karena dahulu kala beliau yang bertanya materi kepada saya</p></div>
     </div>
   </div>
  
-
-</div>
-
-<div id="content">
-
 </div>
 
 
-<script>
-function myFunction() {
-  document.getElementById("content").innerHTML = '<center><div class="container1"><h1 class="judul">Biodata</h1><img class="image" src="Kevin.jpg" alt=""><br><table><tr><td><p>Nama</p></td><td><p>: Kevin Nabiel Albany</p></td></tr><tr><td><p>Kelas</p></td><td><p>: XI - 1</p></td></tr><tr><td><p>Umur</p></td><td><p>: 16</p></td></tr><tr><td><p>Hobi</p></td><td><p>: Berimajinasi</p></td></tr></table></div></center>';
-}
-</script>
-<script type="text/javascript">
-    window.onscroll = function() {scrollFunction()};
+ 
+</div>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    
-    document.getElementById("navbar").style.background = "#501e27";
-  } else {
+</div>
+
+
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">About Me!</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+   <p>Saya adalah seseorang yang baik, tetapi watashi juga adalah seorang psikopat.Hobi saya sangatlah banyak sehingga mungkin akan membuang banyak tempat jika disebutkan.Contohnya yang sering saya kerjakan adalah bermain game, dan membaca</p>
+   <p>Saya sangat menyukai belajar berbagai hal baru terkecuali materi sekolah.</p>
+    </div>
    
-    document.getElementById("navbar").style.background = "none";
-  }
-}
-</script>
+  </div>
+</div>
+<script src="https://kit.fontawesome.com/35a7e14358.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
